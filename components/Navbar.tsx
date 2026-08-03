@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
@@ -67,21 +68,25 @@ export default function Navbar() {
         <a
           href="#home"
           onClick={(e) => { e.preventDefault(); handleAnchorClick("#home"); }}
-          className="flex items-center gap-2 group cursor-pointer"
+          className="flex items-center gap-3 group cursor-pointer"
         >
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0">
-            <polyline points="4,24 4,4 24,4" stroke="#1D4ED8" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-            <line x1="5" y1="23" x2="23" y2="5" stroke="#1D4ED8" strokeWidth="2.5" strokeLinecap="round" />
-          </svg>
+          <div className="relative w-10 h-10 shrink-0">
+            <Image
+              src="/images/B-PROJECTS VENTURES LIMITED.png"
+              alt="B-Projects Logo"
+              fill
+              className="object-contain"
+            />
+          </div>
           <div className="flex flex-col leading-none">
-            <span className={`font-serif text-2xl font-bold tracking-tight transition-colors ${transparent ? "text-white" : "text-[#111111]"}`}>
+            <span className={`font-serif text-2xl font-bold tracking-tight transition-colors ${transparent ? "text-white" : "text-[#0B192C]"}`}>
               B-PROJECTS
             </span>
             <div className="flex items-center gap-1.5 mt-0.5">
-              <span className={`text-[9px] uppercase tracking-[0.2em] font-sans font-medium transition-colors ${transparent ? "text-white/60" : "text-neutral-500"}`}>
+              <span className={`text-[9px] uppercase tracking-[0.2em] font-sans font-medium transition-colors ${transparent ? "text-white/70" : "text-neutral-500"}`}>
                 Ventures Limited
               </span>
-              <span className={`text-[8px] font-sans font-semibold transition-colors ${transparent ? "text-blue-300" : "text-[#1D4ED8]"}`}>
+              <span className={`text-[8px] font-sans font-semibold transition-colors ${transparent ? "text-[#C59A3F]" : "text-[#C59A3F]"}`}>
                 (RC: 9646602)
               </span>
             </div>
@@ -100,8 +105,8 @@ export default function Navbar() {
                 onClick={(e) => { e.preventDefault(); handleAnchorClick(item.href); }}
                 className={`text-sm font-sans font-medium tracking-wide transition-colors duration-200 cursor-pointer ${
                   transparent
-                    ? isActive ? "text-white underline underline-offset-4 decoration-[#1D4ED8]" : "text-white/80 hover:text-white"
-                    : isActive ? "text-[#111111] underline underline-offset-4 decoration-[#1D4ED8]" : "text-neutral-500 hover:text-[#111111]"
+                    ? isActive ? "text-white underline underline-offset-4 decoration-[#C59A3F]" : "text-white/80 hover:text-white"
+                    : isActive ? "text-[#0B192C] underline underline-offset-4 decoration-[#C59A3F]" : "text-neutral-500 hover:text-[#0B192C]"
                 }`}
               >
                 {item.name}
@@ -113,7 +118,7 @@ export default function Navbar() {
         {/* Mobile Menu Trigger */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className={`md:hidden p-2 transition-colors ${transparent ? "text-white hover:text-white/70" : "text-neutral-700 hover:text-[#111111]"}`}
+          className={`md:hidden p-2 transition-colors ${transparent ? "text-white hover:text-white/70" : "text-neutral-700 hover:text-[#0B192C]"}`}
           aria-label="Toggle menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -131,7 +136,7 @@ export default function Navbar() {
                 href={item.href}
                 onClick={(e) => { e.preventDefault(); handleAnchorClick(item.href); }}
                 className={`block py-3 border-b border-neutral-100 text-sm font-sans font-medium tracking-wide transition-colors cursor-pointer ${
-                  activeSection === id ? "text-[#1D4ED8]" : "text-neutral-600 hover:text-[#111111]"
+                  activeSection === id ? "text-[#C59A3F] font-bold" : "text-neutral-600 hover:text-[#0B192C]"
                 }`}
               >
                 {item.name}

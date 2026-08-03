@@ -41,8 +41,8 @@ export default function HeroForm() {
   };
 
   return (
-    <div className="bg-gradient-to-br from-[#0F172A] via-[#1E3A8A] to-[#1D4ED8] text-white p-8 md:p-10 shadow-2xl max-w-md w-full border border-blue-500/20">
-      <p className="text-blue-200/90 text-xs uppercase tracking-[0.25em] font-sans font-bold mb-2">
+    <div className="bg-gradient-to-br from-[#07101E] via-[#0B192C] to-[#1B365D] text-white p-8 md:p-10 shadow-2xl max-w-md w-full border border-[#C59A3F]/30">
+      <p className="text-[#C59A3F] text-xs uppercase tracking-[0.25em] font-sans font-bold mb-2">
         Set an introduction meeting today
       </p>
       <h3 className="text-2xl md:text-3xl font-serif font-bold mb-6 leading-snug">
@@ -51,9 +51,9 @@ export default function HeroForm() {
 
       {submitted ? (
         <div className="bg-black/30 p-6 text-center space-y-3 animate-fade-in border border-white/10">
-          <CheckCircle2 className="w-10 h-10 text-blue-300 mx-auto" />
+          <CheckCircle2 className="w-10 h-10 text-[#C59A3F] mx-auto" />
           <h4 className="font-serif text-lg font-bold text-white">Quote Request Received!</h4>
-          <p className="text-xs text-blue-100/90 font-sans leading-relaxed">
+          <p className="text-xs text-amber-100/90 font-sans leading-relaxed">
             Thank you, {formData.firstName}. Our procurement team will reach out within 24 hours.
           </p>
           <button
@@ -61,7 +61,7 @@ export default function HeroForm() {
               setSubmitted(false);
               setFormData({ firstName: "", lastName: "", email: "", phone: "" });
             }}
-            className="mt-2 text-xs uppercase tracking-widest text-blue-300 hover:text-white underline font-medium"
+            className="mt-2 text-xs uppercase tracking-widest text-[#C59A3F] hover:text-white underline font-medium"
           >
             Submit Another
           </button>
@@ -133,7 +133,7 @@ export default function HeroForm() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full mt-2 border border-white text-white hover:bg-white hover:text-[#1E3A8A] py-3.5 px-6 text-xs uppercase tracking-widest font-bold transition-all duration-200 flex items-center justify-center gap-2 group"
+            className="w-full mt-2 bg-[#C59A3F] hover:bg-[#A67C1E] text-white py-3.5 px-6 text-xs uppercase tracking-widest font-bold transition-all duration-200 flex items-center justify-center gap-2 group shadow-md"
           >
             {loading ? "Processing..." : "Submit"}
             {!loading && <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />}

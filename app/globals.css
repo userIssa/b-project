@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-blue: #1D4ED8;
-  --color-brand-blue-hover: #1E3A8A;
   --color-brand-navy: #0B192C;
+  --color-brand-navy-dark: #07101E;
+  --color-brand-gold: #C59A3F;
+  --color-brand-gold-hover: #A67C1E;
+  --color-brand-gold-light: #E5C158;
   --color-brand-dark: #111111;
   --color-brand-darker: #050505;
   --color-brand-card: #f0eeea;
@@ -34,12 +36,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1D4ED8;
+  background: #C59A3F;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #1E3A8A;
+  background: #A67C1E;
 }
 
 /* Diagonal arrow icon used in section labels */
@@ -89,7 +91,7 @@ body {
   color: #aaa;
 }
 .input-underline:focus {
-  border-bottom-color: #1D4ED8;
+  border-bottom-color: #C59A3F;
 }
 
 /* Fade-in animation */

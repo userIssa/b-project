@@ -40,10 +40,10 @@ const servicesList = [
 // Projects data
 // ──────────────────────────────────────────────
 const featuredProjects = [
-  { title: "Offshore Pipeline Valves & Actuators",       location: "Niger Delta, Nigeria",            cat: "Oil & Gas",       img: "/images/WhatsApp Image 2026-07-27 at 10.52.51 AM.jpeg",      desc: "Turnkey procurement of API 6D subsea ball valves and automated actuators for offshore production platform." },
-  { title: "Commercial Solar & Hybrid Power Plant",      location: "Lagos Industrial Zone, Nigeria",  cat: "Renewables",      img: "/images/WhatsApp Image 2026-07-27 at 10.52.51 AM (1).jpeg",  desc: "In partnership with Kha-Riz Energy, EPC deployment of 1.5MW commercial solar plant with battery storage." },
-  { title: "Rural Electrification & Solar Lighting",     location: "North-Central MDAs, Nigeria",     cat: "Government",      img: "/images/WhatsApp Image 2026-07-27 at 10.52.51 AM (2).jpeg",  desc: "Supply and installation of 2,500 integrated solar street lighting units across public utility corridors." },
-  { title: "Deep-Water Dock Mooring & Vessel Supplies",  location: "Bonny Island Terminal, Nigeria",  cat: "Marine",          img: "/images/WhatsApp Image 2026-07-27 at 10.52.51 AM (3).jpeg",  desc: "Supply of heavy offshore mooring equipment, marine safety gear, and vessel replacement spares." },
+  { title: "Industrial OEM Pumps & Process Equipment",    location: "Niger Delta, Nigeria",            cat: "Oil & Gas",       img: "/images/WhatsApp Image 2026-07-27 at 10.52.51 AM (3).jpeg",  desc: "Turnkey procurement of heavy-duty self-priming centrifugal pumps, electric motors, and process piping systems." },
+  { title: "Solar Street Lighting & Highway Electrification", location: "North-Central MDAs, Nigeria", cat: "Renewables",      img: "/images/WhatsApp Image 2026-07-27 at 10.52.52 AM (2).jpeg",  desc: "Deployment of integrated solar street lighting units across public utility corridors in partnership with Kha-Riz Energy." },
+  { title: "Civil Infrastructure & Construction Materials", location: "Abuja FCT, Nigeria",            cat: "Infrastructure",  img: "/images/WhatsApp Image 2026-07-27 at 10.52.52 AM (1).jpeg",  desc: "Bulk supply of high-yield structural steel beams, rebar bundles, cement bags, and civil building supplies." },
+  { title: "Certified Personal Protective Equipment & HSE", location: "Port Harcourt, Nigeria",       cat: "Safety & HSE",    img: "/images/WhatsApp Image 2026-07-27 at 10.52.51 AM (2).jpeg",  desc: "Supply of fire-retardant PPE coveralls, safety footwear, industrial helmets, and workplace HSE protection gear." },
 ];
 
 export default function Home() {
@@ -80,10 +80,10 @@ export default function Home() {
               Nigerian indigenous procurement, industrial supply, project support, and engineering services — bridging project owners, EPC contractors, and world-class OEMs.
             </p>
             <div className="flex gap-4 flex-wrap pt-2">
-              <a href="#services" className="px-7 py-3.5 bg-[#1D4ED8] hover:bg-[#1E3A8A] text-white transition-colors text-xs uppercase tracking-widest font-bold shadow-lg">
+              <a href="#services" className="px-7 py-3.5 bg-[#C59A3F] hover:bg-[#A67C1E] text-white transition-colors text-xs uppercase tracking-widest font-bold shadow-lg">
                 Our Services
               </a>
-              <a href="#about" className="px-7 py-3.5 border border-white text-white hover:bg-white hover:text-[#111111] transition-colors text-xs uppercase tracking-widest font-bold">
+              <a href="#about" className="px-7 py-3.5 border border-white text-white hover:bg-white hover:text-[#0B192C] transition-colors text-xs uppercase tracking-widest font-bold">
                 About Us
               </a>
             </div>
@@ -106,7 +106,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-20">
             <div className="lg:col-span-4">
               <p className="text-xs uppercase tracking-[0.25em] font-sans font-bold text-neutral-500">About Us</p>
-              <p className="text-xs font-semibold text-[#1D4ED8] mt-1 font-sans">RC NO: 9646602</p>
+              <p className="text-xs font-semibold text-[#C59A3F] mt-1 font-sans">RC NO: 9646602</p>
               <DiagArrow />
             </div>
             <div className="lg:col-span-8 space-y-6">
@@ -153,8 +153,8 @@ export default function Home() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {["Integrity", "Professionalism", "Safety", "Innovation", "Sustainability", "Quality", "Customer Focus", "Operational Excellence"].map((val, i) => (
               <div key={i} className="bg-white border border-neutral-200 p-4 flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#1D4ED8] shrink-0" />
-                <span className="text-xs uppercase tracking-wider font-bold text-[#111111]">{val}</span>
+                <CheckCircle2 className="w-4 h-4 text-[#C59A3F] shrink-0" />
+                <span className="text-xs uppercase tracking-wider font-bold text-[#0B192C]">{val}</span>
               </div>
             ))}
           </div>
@@ -164,11 +164,11 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           §3  SERVICES
       ═══════════════════════════════════════════ */}
-      <section id="services" className="bg-gradient-to-br from-[#0B192C] via-[#1E3A8A] to-[#1D4ED8]">
+      <section id="services" className="bg-gradient-to-br from-[#07101E] via-[#0B192C] to-[#162A45]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 pt-20 pb-4">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
             <div className="lg:col-span-4">
-              <p className="text-xs uppercase tracking-[0.25em] font-sans font-bold text-blue-200/80">Our Capabilities &amp; Services</p>
+              <p className="text-xs uppercase tracking-[0.25em] font-sans font-bold text-[#C59A3F]">Our Capabilities &amp; Services</p>
               <DiagArrow color="white" />
             </div>
             <div className="lg:col-span-6">
@@ -177,23 +177,23 @@ export default function Home() {
               </h2>
             </div>
             <div className="lg:col-span-2 lg:text-right">
-              <a href="#contact" className="inline-block text-xs uppercase tracking-widest font-bold text-white border border-white px-6 py-3 hover:bg-white hover:text-[#1E3A8A] transition-colors">
+              <a href="#contact" className="inline-block text-xs uppercase tracking-widest font-bold text-white bg-[#C59A3F] hover:bg-[#A67C1E] px-6 py-3 transition-colors shadow-md">
                 Get a Quote
               </a>
             </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-white/20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-white/10">
           {servicesList.map(({ Icon, label, desc, features }, i) => (
-            <div key={i} className="border border-white/20 p-8 hover:bg-white/10 transition-colors group">
-              <Icon className="w-8 h-8 text-blue-300/80 mb-4 group-hover:text-white transition-colors" />
+            <div key={i} className="border border-white/10 p-8 hover:bg-white/5 transition-colors group">
+              <Icon className="w-8 h-8 text-[#C59A3F] mb-4 group-hover:text-white transition-colors" />
               <p className="text-xs uppercase tracking-[0.2em] font-sans font-bold text-white mb-3">{label}</p>
-              <p className="text-blue-100/80 text-xs font-sans leading-relaxed mb-4">{desc}</p>
-              <ul className="space-y-1.5 border-t border-white/20 pt-4">
+              <p className="text-amber-100/80 text-xs font-sans leading-relaxed mb-4">{desc}</p>
+              <ul className="space-y-1.5 border-t border-white/10 pt-4">
                 {features.map((f, j) => (
-                  <li key={j} className="flex items-center gap-2 text-[11px] text-blue-100/70 font-sans">
-                    <Check className="w-3 h-3 text-white/70 shrink-0" />
+                  <li key={j} className="flex items-center gap-2 text-[11px] text-amber-100/70 font-sans">
+                    <Check className="w-3 h-3 text-[#C59A3F] shrink-0" />
                     {f}
                   </li>
                 ))}
@@ -214,7 +214,7 @@ export default function Home() {
               <DiagArrow />
             </div>
             <div className="lg:col-span-8">
-              <h2 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#111111] leading-tight">
+              <h2 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#0B192C] leading-tight">
                 Every project has its unique DNA
               </h2>
             </div>
@@ -223,7 +223,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {featuredProjects.map((proj, i) => (
               <div key={i} className="group">
-                <div className="relative aspect-[4/3] overflow-hidden bg-neutral-200 mb-4">
+                <div className="relative aspect-[4/3] overflow-hidden bg-neutral-200 mb-4 border border-neutral-300">
                   <Image
                     src={proj.img}
                     alt={proj.title}
@@ -231,12 +231,12 @@ export default function Home() {
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-[#1D4ED8] px-3 py-1 text-[10px] uppercase tracking-widest font-bold text-white">
+                  <div className="absolute top-3 left-3 bg-[#0B192C] border border-[#C59A3F]/50 px-3 py-1 text-[10px] uppercase tracking-widest font-bold text-[#C59A3F]">
                     {proj.cat}
                   </div>
                 </div>
-                <p className="text-xs uppercase tracking-widest font-bold text-[#1D4ED8] mb-1">{proj.location}</p>
-                <h3 className="font-sans text-sm uppercase tracking-wide font-bold text-[#111111] mb-1">{proj.title}</h3>
+                <p className="text-xs uppercase tracking-widest font-bold text-[#C59A3F] mb-1">{proj.location}</p>
+                <h3 className="font-sans text-sm uppercase tracking-wide font-bold text-[#0B192C] mb-1">{proj.title}</h3>
                 <p className="text-neutral-500 text-sm font-sans leading-relaxed">{proj.desc}</p>
               </div>
             ))}
@@ -247,11 +247,11 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           §5  CLIENTS
       ═══════════════════════════════════════════ */}
-      <section id="clients" className="bg-[#111111] py-24">
+      <section id="clients" className="bg-[#07101E] py-24">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16">
             <div className="lg:col-span-4">
-              <p className="text-xs uppercase tracking-[0.25em] font-sans font-bold text-white/40">We Work With Top Notch Clients</p>
+              <p className="text-xs uppercase tracking-[0.25em] font-sans font-bold text-[#C59A3F]">We Work With Top Notch Clients</p>
               <DiagArrow color="white" />
             </div>
             <div className="lg:col-span-8">
@@ -278,7 +278,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           §6  CONTACT INFO STRIP
       ═══════════════════════════════════════════ */}
-      <section className="bg-gradient-to-r from-[#0F172A] via-[#1E3A8A] to-[#1D4ED8]">
+      <section className="bg-gradient-to-r from-[#07101E] via-[#0B192C] to-[#162A45]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-x border-white/10">
             {[
@@ -288,9 +288,9 @@ export default function Home() {
               { Icon: ShieldCheck, title: "Certifications", body: "NUPRC Certified\nNSITF Compliant\nNOGICD Local Content" },
             ].map(({ Icon, title, body }, i) => (
               <div key={i} className="border border-white/10 p-8 space-y-2">
-                <Icon className="w-5 h-5 text-blue-300" />
+                <Icon className="w-5 h-5 text-[#C59A3F]" />
                 <h3 className="font-sans text-xs uppercase tracking-widest font-bold text-white">{title}</h3>
-                <p className="text-xs text-blue-100/90 font-sans leading-relaxed whitespace-pre-line break-words">{body}</p>
+                <p className="text-xs text-amber-100/90 font-sans leading-relaxed whitespace-pre-line break-words">{body}</p>
               </div>
             ))}
           </div>

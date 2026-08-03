@@ -178,11 +178,11 @@ export default function ServicesPage() {
           <div className="absolute inset-0 bg-black/70" />
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-6 sm:px-8 text-center space-y-8">
-          <span className="font-serif text-7xl text-[#38BDF8] leading-none select-none block">&ldquo;</span>
+          <span className="font-serif text-7xl text-[#C59A3F] leading-none select-none block">&ldquo;</span>
           <blockquote className="font-serif text-2xl sm:text-3xl md:text-4xl text-white font-normal leading-relaxed tracking-tight italic">
             Quality procurement and dependable project support are the foundations of industrial execution and national value creation.
           </blockquote>
-          <p className="text-xs uppercase tracking-[0.3em] font-sans font-bold text-[#38BDF8]">
+          <p className="text-xs uppercase tracking-[0.3em] font-sans font-bold text-[#C59A3F]">
             — B-PROJECTS VENTURES LIMITED
           </p>
         </div>
@@ -191,7 +191,7 @@ export default function ServicesPage() {
       {/* 4. CALL TO ACTION */}
       <section className="py-20 bg-[#F5F4F1] text-center border-t border-neutral-200">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 space-y-6">
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#111111]">
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#0B192C]">
             Need OEM technical sourcing or project support?
           </h2>
           <p className="text-neutral-500 text-sm font-sans max-w-xl mx-auto">
@@ -199,7 +199,7 @@ export default function ServicesPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-block px-8 py-4 bg-[#1D4ED8] text-white hover:bg-[#1E3A8A] transition-colors text-xs uppercase tracking-widest font-bold shadow-lg"
+            className="inline-block px-8 py-4 bg-[#C59A3F] text-white hover:bg-[#A67C1E] transition-colors text-xs uppercase tracking-widest font-bold shadow-lg"
           >
             Get in Touch Today
           </Link>

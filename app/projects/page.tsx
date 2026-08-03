@@ -20,64 +20,76 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    id: "offshore-valves",
-    title: "Offshore Pipeline Valves & Actuators",
+    id: "industrial-pumps",
+    title: "Industrial OEM Pumps & Electric Motors",
     category: "Oil & Gas",
     location: "Niger Delta, Nigeria",
     year: "2034",
-    image: "/images/WhatsApp Image 2026-07-27 at 10.52.51 AM.jpeg",
-    shortDesc: "Turnkey procurement of API 6D subsea ball valves and automated actuators for offshore production platform.",
-    fullDesc: "Sourced, inspected, and delivered high-pressure API 6D certified ball valves and hydraulic actuators directly from OEM plants to offshore platforms in the Niger Delta, ensuring zero downtime during shutdown operations.",
-    client: "Major Upstream Operator",
-    scope: "API 6D Valves & Shutdown Material Expediting",
+    image: "/images/WhatsApp Image 2026-07-27 at 10.52.51 AM (3).jpeg",
+    shortDesc: "Turnkey procurement of Super T-Series self-priming centrifugal pumps and heavy-duty electric motors for oilfield processing.",
+    fullDesc: "Sourced, factory-inspected, and delivered OEM self-priming centrifugal pumps, heavy-duty electric motors, and skid-mounted fluid transfer systems directly to oilfield facility operators in the Niger Delta.",
+    client: "Upstream Oil & Gas Operator",
+    scope: "OEM Centrifugal Pumps & Electric Motors",
   },
   {
-    id: "commercial-solar",
-    title: "Commercial Solar & Hybrid Power Plant",
+    id: "solar-street-lighting",
+    title: "Highway Solar Street Lighting & Utility Electrification",
     category: "Renewables",
-    location: "Lagos Industrial Zone, Nigeria",
+    location: "North-Central MDAs, Nigeria",
     year: "2034",
-    image: "/images/WhatsApp Image 2026-07-27 at 10.52.51 AM (1).jpeg",
-    shortDesc: "In partnership with Kha-Riz Energy, EPC deployment of 1.5MW commercial solar plant with battery storage.",
-    fullDesc: "Engineered and deployed a 1.5MW industrial rooftop solar array with 2.8MWh Battery Energy Storage System (BESS) for a heavy manufacturing plant, reducing operational grid reliance by 65%.",
-    client: "Industrial Manufacturing Client",
-    scope: "Solar EPC, BESS & Energy Efficiency Audit",
+    image: "/images/WhatsApp Image 2026-07-27 at 10.52.52 AM (2).jpeg",
+    shortDesc: "In partnership with Kha-Riz Energy, turnkey supply and installation of high-lumen solar street lights across municipal corridors.",
+    fullDesc: "Procured, assembled, and deployed high-efficiency solar street lighting poles with integrated lithium battery storage and automated dusk-to-dawn sensors along municipal transit corridors.",
+    client: "Federal Ministry of Utilities & MDAs",
+    scope: "Solar Lighting EPC & Public Utility Electrification",
   },
   {
-    id: "mda-solar-lighting",
-    title: "Rural Electrification & Solar Lighting",
+    id: "civil-building-supplies",
+    title: "Civil Infrastructure Steel, Cement & Materials",
+    category: "Infrastructure",
+    location: "Abuja FCT, Nigeria",
+    year: "2033",
+    image: "/images/WhatsApp Image 2026-07-27 at 10.52.52 AM (1).jpeg",
+    shortDesc: "Bulk supply of high-yield structural steel beams, rebar bundles, cement bags, roofing systems, and aggregates.",
+    fullDesc: "Managed high-volume material sourcing for structural steel profiles, high-tensile rebar bundles, bags of cement, roofing sheets, and PVC drainage piping for major commercial and municipal infrastructure developments.",
+    client: "Tier-1 EPC Civil Construction Contractor",
+    scope: "Structural Steel, Rebar, Cement & Aggregates",
+  },
+  {
+    id: "hse-safety-gear",
+    title: "Certified Industrial PPE & Workplace HSE Solutions",
     category: "Government",
-    location: "North-Central MDAs, Nigeria",
+    location: "Port Harcourt, Nigeria",
     year: "2033",
     image: "/images/WhatsApp Image 2026-07-27 at 10.52.51 AM (2).jpeg",
-    shortDesc: "Supply and installation of 2,500 integrated solar street lighting units across public utility corridors.",
-    fullDesc: "Procured and delivered high-lumen, lithium-battery powered solar street lighting systems for federal highway corridors and public institutional premises in alignment with government rural electrification mandates.",
-    client: "Federal Ministry of Power & Utilities",
-    scope: "Solar Street Lighting & Utility Procurement",
+    shortDesc: "Comprehensive supply of fire-retardant coveralls, safety boots, industrial helmets, goggles, and HSE equipment.",
+    fullDesc: "Delivered bulk certified Personal Protective Equipment (PPE) including high-visibility flame-retardant coveralls, safety footwear, impact-resistant helmets, noise protection earmuffs, and specialized safety gloves.",
+    client: "Industrial & Maritime Enterprise Client",
+    scope: "Certified PPE, Flame-Retardant Coveralls & HSE Gear",
   },
   {
-    id: "marine-mooring",
-    title: "Deep-Water Dock Mooring & Vessel Supplies",
-    category: "Marine",
-    location: "Bonny Island Terminal, Nigeria",
-    year: "2033",
-    image: "/images/WhatsApp Image 2026-07-27 at 10.52.51 AM (3).jpeg",
-    shortDesc: "Supply of heavy offshore mooring equipment, marine safety gear, and vessel replacement spares.",
-    fullDesc: "Managed end-to-end marine logistics for high-tensile mooring lines, quick-release hooks, navigational beacons, and offshore crew PPE for marine vessel operations.",
-    client: "Offshore Marine Logistics Operator",
-    scope: "Mooring Systems & Marine Safety Supply",
-  },
-  {
-    id: "structural-steel-supply",
-    title: "Civil Infrastructure Structural Steel",
-    category: "Infrastructure",
-    location: "Abuja Federal Capital Territory, Nigeria",
+    id: "gas-detection-inspection",
+    title: "Gas Detection & NDT Field Quality Inspection",
+    category: "Oil & Gas",
+    location: "Lagos / Delta Facility, Nigeria",
     year: "2032",
     image: "/images/WhatsApp Image 2026-07-27 at 10.52.52 AM.jpeg",
-    shortDesc: "Bulk supply of structural steel beams, concrete reinforcement, and heavy equipment leasing.",
-    fullDesc: "Executed strategic sourcing for high-yield structural steel profiles, high-tensile rebar, and heavy earthmoving equipment leasing for bridge overpass construction.",
-    client: "Tier-1 EPC Civil Contractor",
-    scope: "Structural Steel, Rebar & Equipment Leasing",
+    shortDesc: "Technical field inspection services, portable gas detection equipment, and non-destructive testing (NDT).",
+    fullDesc: "Supplied certified multi-gas detectors and deployed qualified QA/QC inspectors for non-destructive testing (NDT), pipeline wall thickness measurement, and hazardous atmosphere monitoring.",
+    client: "Midstream Pipeline & Refinery Operator",
+    scope: "Gas Detection Instruments & NDT Inspection",
+  },
+  {
+    id: "warehouse-inventory-logistics",
+    title: "Warehouse Inventory & Strategic Sourcing Hub",
+    category: "Marine",
+    location: "Lekki Logistics Hub, Lagos, Nigeria",
+    year: "2032",
+    image: "/images/WhatsApp Image 2026-07-27 at 10.52.51 AM (1).jpeg",
+    shortDesc: "High-capacity warehousing, material handling, expediting, and vendor management for industrial spare parts.",
+    fullDesc: "Established strategic inventory management and warehousing for thousands of certified industrial valves, flanges, safety stock, and replacement spares to reduce lead times for offshore and onshore project execution.",
+    client: "EPC Consortium & Industrial Plants",
+    scope: "Warehousing, Inventory Management & Logistics",
   },
 ];
 
@@ -133,8 +145,8 @@ export default function ProjectsPage() {
                 onClick={() => setActiveFilter(cat)}
                 className={`px-5 py-2.5 text-xs uppercase tracking-widest font-semibold transition-all duration-200 ${
                   activeFilter === cat
-                    ? "bg-[#1D4ED8] text-white shadow-sm"
-                    : "bg-transparent text-neutral-500 border border-neutral-300 hover:text-[#111111] hover:border-neutral-400"
+                    ? "bg-[#C59A3F] text-white shadow-sm font-bold"
+                    : "bg-transparent text-neutral-500 border border-neutral-300 hover:text-[#0B192C] hover:border-neutral-400"
                 }`}
               >
                 {cat}
@@ -168,16 +180,16 @@ export default function ProjectsPage() {
 
                 <div className="flex items-center justify-between text-xs text-neutral-400 font-sans mb-2">
                   <span className="flex items-center gap-1">
-                    <MapPin className="w-3.5 h-3.5 text-[#1D4ED8]" />
+                    <MapPin className="w-3.5 h-3.5 text-[#C59A3F]" />
                     {project.location}
                   </span>
                   <span className="flex items-center gap-1">
-                    <Calendar className="w-3.5 h-3.5 text-[#1D4ED8]" />
+                    <Calendar className="w-3.5 h-3.5 text-[#C59A3F]" />
                     {project.year}
                   </span>
                 </div>
 
-                <h3 className="font-sans text-sm uppercase tracking-wide font-bold text-[#111111] group-hover:text-[#1D4ED8] transition-colors mb-2">
+                <h3 className="font-sans text-sm uppercase tracking-wide font-bold text-[#0B192C] group-hover:text-[#C59A3F] transition-colors mb-2">
                   {project.title}
                 </h3>
 
@@ -186,7 +198,7 @@ export default function ProjectsPage() {
                 </p>
 
                 <div className="pt-4 border-t border-neutral-200 mt-4">
-                  <span className="text-xs uppercase tracking-wider font-bold text-[#1D4ED8] group-hover:text-[#111111] transition-colors">
+                  <span className="text-xs uppercase tracking-wider font-bold text-[#C59A3F] group-hover:text-[#0B192C] transition-colors">
                     View Project Details →
                   </span>
                 </div>
@@ -261,7 +273,7 @@ export default function ProjectsPage() {
               <Link
                 href="/contact"
                 onClick={() => setSelectedProject(null)}
-                className="px-6 py-3 bg-[#1D4ED8] text-white hover:bg-[#1E3A8A] transition-colors text-xs uppercase tracking-widest font-bold shadow-md"
+                className="px-6 py-3 bg-[#C59A3F] text-white hover:bg-[#A67C1E] transition-colors text-xs uppercase tracking-widest font-bold shadow-md"
               >
                 Request Sourcing Quote →
               </Link>

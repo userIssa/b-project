@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -9,34 +10,17 @@ export default function Footer() {
 
           {/* Col 1: Brand */}
           <div className="md:col-span-2 space-y-3">
-            <Link href="/" className="inline-flex items-center gap-2 group">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 28 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <polyline
-                  points="4,24 4,4 24,4"
-                  stroke="#1D4ED8"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  fill="none"
+            <Link href="/" className="inline-flex items-center gap-3 group">
+              <div className="relative w-9 h-9 shrink-0">
+                <Image
+                  src="/images/B-PROJECTS VENTURES LIMITED.png"
+                  alt="B-Projects Logo"
+                  fill
+                  className="object-contain"
                 />
-                <line
-                  x1="5"
-                  y1="23"
-                  x2="23"
-                  y2="5"
-                  stroke="#1D4ED8"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                />
-              </svg>
+              </div>
               <div className="flex flex-col leading-none">
-              <span className="font-serif text-xl font-bold tracking-tight text-[#111111]">
+              <span className="font-serif text-xl font-bold tracking-tight text-[#0B192C]">
                 B-PROJECTS
               </span>
               <span className="text-[9px] uppercase tracking-[0.2em] text-neutral-500 font-sans font-medium mt-0.5">

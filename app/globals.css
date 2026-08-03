@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-brown: #a05c1e;
+  --color-brand-brown-hover: #884b16;
+  --color-brand-dark: #111111;
+  --color-brand-darker: #050505;
+  --color-brand-card: #f0eeea;
+  --color-brand-light: #F5F4F1;
+  --color-brand-offwhite: #EEECEA;
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F5F4F1;
+  color: #111111;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F4F1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a05c1e;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #884b16;
+}
+
+/* Diagonal arrow icon used in section labels */
+.diagonal-arrow {
+  display: block;
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+.diagonal-arrow::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+}
+.diagonal-arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg) translate(-2px, -2px);
+}
+
+/* Underline input style for contact form */
+.input-underline {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #999;
+  border-radius: 0;
+  padding: 8px 0;
+  width: 100%;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.875rem;
+  color: #111;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.input-underline::placeholder {
+  color: #aaa;
+}
+.input-underline:focus {
+  border-bottom-color: #a05c1e;
+}
+
+/* Fade-in animation */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.4s ease forwards;
+}

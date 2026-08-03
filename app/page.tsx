@@ -40,10 +40,10 @@ const servicesList = [
 // Projects data
 // ──────────────────────────────────────────────
 const featuredProjects = [
-  { title: "Offshore Pipeline Valves & Actuators",       location: "Niger Delta, Nigeria",            cat: "Oil & Gas",       img: "/images/hero_canyon_bridge.png",  desc: "Turnkey procurement of API 6D subsea ball valves and automated actuators for offshore production platform." },
-  { title: "Commercial Solar & Hybrid Power Plant",      location: "Lagos Industrial Zone, Nigeria",  cat: "Renewables",      img: "/images/mollins_museum.png",      desc: "In partnership with Kha-Riz Energy, EPC deployment of 1.5MW commercial solar plant with battery storage." },
-  { title: "Rural Electrification & Solar Lighting",     location: "North-Central MDAs, Nigeria",     cat: "Government",      img: "/images/hillway_interchange.png", desc: "Supply and installation of 2,500 integrated solar street lighting units across public utility corridors." },
-  { title: "Deep-Water Dock Mooring & Vessel Supplies",  location: "Bonny Island Terminal, Nigeria",  cat: "Marine",          img: "/images/notting_harbor.png",      desc: "Supply of heavy offshore mooring equipment, marine safety gear, and vessel replacement spares." },
+  { title: "Offshore Pipeline Valves & Actuators",       location: "Niger Delta, Nigeria",            cat: "Oil & Gas",       img: "/images/WhatsApp Image 2026-07-27 at 10.52.51 AM.jpeg",      desc: "Turnkey procurement of API 6D subsea ball valves and automated actuators for offshore production platform." },
+  { title: "Commercial Solar & Hybrid Power Plant",      location: "Lagos Industrial Zone, Nigeria",  cat: "Renewables",      img: "/images/WhatsApp Image 2026-07-27 at 10.52.51 AM (1).jpeg",  desc: "In partnership with Kha-Riz Energy, EPC deployment of 1.5MW commercial solar plant with battery storage." },
+  { title: "Rural Electrification & Solar Lighting",     location: "North-Central MDAs, Nigeria",     cat: "Government",      img: "/images/WhatsApp Image 2026-07-27 at 10.52.51 AM (2).jpeg",  desc: "Supply and installation of 2,500 integrated solar street lighting units across public utility corridors." },
+  { title: "Deep-Water Dock Mooring & Vessel Supplies",  location: "Bonny Island Terminal, Nigeria",  cat: "Marine",          img: "/images/WhatsApp Image 2026-07-27 at 10.52.51 AM (3).jpeg",  desc: "Supply of heavy offshore mooring equipment, marine safety gear, and vessel replacement spares." },
 ];
 
 export default function Home() {

@@ -13,14 +13,32 @@ export default function ContactForm() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+    setErrorMessage("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, formType: "contact_inquiry" }),
+      });
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data?.error || "Failed to submit inquiry.");
+      }
+
       setSubmitted(true);
-    }, 600);
+    } catch (err: any) {
+      console.error(err);
+      setErrorMessage(err?.message || "Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -86,6 +104,11 @@ export default function ContactForm() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-8 font-sans">
+                {errorMessage && (
+                  <div className="p-4 bg-red-50 border border-red-200 text-red-700 text-xs font-sans rounded">
+                    {errorMessage}
+                  </div>
+                )}
                 {/* Row 1 */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                   <div>

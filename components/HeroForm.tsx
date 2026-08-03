@@ -12,14 +12,32 @@ export default function HeroForm() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+    setErrorMessage("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, formType: "quote_request" }),
+      });
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data?.error || "Failed to submit quote request.");
+      }
+
       setSubmitted(true);
-    }, 600);
+    } catch (err: any) {
+      console.error(err);
+      setErrorMessage(err?.message || "Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -50,6 +68,11 @@ export default function HeroForm() {
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-5 font-sans">
+          {errorMessage && (
+            <div className="p-3 bg-red-900/60 border border-red-500 text-red-100 text-xs font-sans rounded">
+              {errorMessage}
+            </div>
+          )}
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="block text-xs font-medium text-blue-200/80 mb-1">

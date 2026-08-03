@@ -86,12 +86,12 @@ export default function AboutUsPage() {
             </div>
 
             <div className="lg:col-span-5">
-              <div className="relative aspect-[3/4] w-full overflow-hidden bg-neutral-200 shadow-lg">
+              <div className="relative aspect-[3/4] w-full overflow-hidden bg-neutral-200 shadow-lg border border-neutral-300">
                 <Image
-                  src="/images/hero_canyon_bridge.png"
-                  alt="B-Projects Industrial Sourcing"
+                  src="/images/WhatsApp Image 2026-07-27 at 10.52.52 AM (1).jpeg"
+                  alt="B-Projects Industrial Sourcing & Procurement"
                   fill
-                  className="object-cover grayscale"
+                  className="object-cover"
                 />
               </div>
             </div>

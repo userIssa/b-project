@@ -3,6 +3,7 @@ import Link from "next/link";
 import HeroForm from "@/components/HeroForm";
 import ContactForm from "@/components/ContactForm";
 import ManagementSection from "@/components/ManagementSection";
+import ScrollReveal from "@/components/ScrollReveal";
 import {
   Factory, Layers, Building2, HardHat,
   Anchor, ShieldCheck, Truck, Sun,
@@ -70,32 +71,34 @@ export default function Home() {
 
         {/* Heading */}
         <div className="relative z-10 flex-1 flex items-center max-w-7xl mx-auto w-full px-6 sm:px-8 pt-28 pb-16">
-          <div className="max-w-3xl space-y-6">
-            <p className="text-xs uppercase tracking-[0.3em] font-sans font-bold text-white/70">
-              Helping you build a better tomorrow
-            </p>
-            <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-bold tracking-tight text-white leading-[1.03]">
-              B-Projects Ventures Limited
-            </h1>
-            <p className="text-white/60 text-base font-sans max-w-xl leading-relaxed">
-              Nigerian indigenous procurement, industrial supply, project support, and engineering services, bridging project owners, EPC contractors, and world-class OEMs.
-            </p>
-            <div className="flex gap-4 flex-wrap pt-2">
-              <a href="#services" className="px-7 py-3.5 bg-[#C59A3F] hover:bg-[#A67C1E] text-white transition-colors text-xs uppercase tracking-widest font-bold shadow-lg">
-                Our Services
-              </a>
-              <a href="#about" className="px-7 py-3.5 border border-white text-white hover:bg-white hover:text-[#0B192C] transition-colors text-xs uppercase tracking-widest font-bold">
-                About Us
-              </a>
+          <ScrollReveal direction="up" delay={100}>
+            <div className="max-w-3xl space-y-6">
+              <p className="text-xs uppercase tracking-[0.3em] font-sans font-bold text-white/70">
+                Helping you build a better tomorrow
+              </p>
+              <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-bold tracking-tight text-white leading-[1.03]">
+                B-Projects Ventures Limited
+              </h1>
+              <p className="text-white/60 text-base font-sans max-w-xl leading-relaxed">
+                Nigerian indigenous procurement, industrial supply, project support, and engineering services, bridging project owners, EPC contractors, and world-class OEMs.
+              </p>
+              <div className="flex gap-4 flex-wrap pt-2">
+                <a href="#services" className="px-7 py-3.5 bg-[#C59A3F] hover:bg-[#A67C1E] text-white transition-colors text-xs uppercase tracking-widest font-bold shadow-lg">
+                  Our Services
+                </a>
+                <a href="#about" className="px-7 py-3.5 border border-white text-white hover:bg-white hover:text-[#0B192C] transition-colors text-xs uppercase tracking-widest font-bold">
+                  About Us
+                </a>
+              </div>
             </div>
-          </div>
+          </ScrollReveal>
         </div>
 
         {/* Form panel — bottom right */}
         <div className="relative z-10 flex justify-end max-w-7xl mx-auto w-full px-6 sm:px-8 pb-0">
-          <div className="w-full md:max-w-md lg:max-w-lg">
+          <ScrollReveal direction="left" delay={250} className="w-full md:max-w-md lg:max-w-lg">
             <HeroForm />
-          </div>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -187,19 +190,21 @@ export default function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-white/10">
           {servicesList.map(({ Icon, label, desc, features }, i) => (
-            <div key={i} className="border border-white/10 p-8 hover:bg-white/5 transition-colors group">
-              <Icon className="w-8 h-8 text-[#C59A3F] mb-4 group-hover:text-white transition-colors" />
-              <p className="text-xs uppercase tracking-[0.2em] font-sans font-bold text-white mb-3">{label}</p>
-              <p className="text-amber-100/80 text-xs font-sans leading-relaxed mb-4">{desc}</p>
-              <ul className="space-y-1.5 border-t border-white/10 pt-4">
-                {features.map((f, j) => (
-                  <li key={j} className="flex items-center gap-2 text-[11px] text-amber-100/70 font-sans">
-                    <Check className="w-3 h-3 text-[#C59A3F] shrink-0" />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <ScrollReveal key={i} direction="up" delay={100 * (i + 1)}>
+              <div className="border border-white/10 p-8 hover:bg-white/5 transition-colors group h-full">
+                <Icon className="w-8 h-8 text-[#C59A3F] mb-4 group-hover:text-white transition-colors" />
+                <p className="text-xs uppercase tracking-[0.2em] font-sans font-bold text-white mb-3">{label}</p>
+                <p className="text-amber-100/80 text-xs font-sans leading-relaxed mb-4">{desc}</p>
+                <ul className="space-y-1.5 border-t border-white/10 pt-4">
+                  {features.map((f, j) => (
+                    <li key={j} className="flex items-center gap-2 text-[11px] text-amber-100/70 font-sans">
+                      <Check className="w-3 h-3 text-[#C59A3F] shrink-0" />
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </ScrollReveal>
           ))}
         </div>
       </section>
@@ -209,37 +214,41 @@ export default function Home() {
       ═══════════════════════════════════════════ */}
       <section id="projects" className="py-24 bg-[#F5F4F1]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16">
-            <div className="lg:col-span-4">
-              <p className="text-xs uppercase tracking-[0.25em] font-sans font-bold text-neutral-500">Featured Projects</p>
-              <DiagArrow />
+          <ScrollReveal direction="up">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16">
+              <div className="lg:col-span-4">
+                <p className="text-xs uppercase tracking-[0.25em] font-sans font-bold text-neutral-500">Featured Projects</p>
+                <DiagArrow />
+              </div>
+              <div className="lg:col-span-8">
+                <h2 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#0B192C] leading-tight">
+                  Every project has its unique DNA
+                </h2>
+              </div>
             </div>
-            <div className="lg:col-span-8">
-              <h2 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-[#0B192C] leading-tight">
-                Every project has its unique DNA
-              </h2>
-            </div>
-          </div>
+          </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {featuredProjects.map((proj, i) => (
-              <div key={i} className="group">
-                <div className="relative aspect-[4/3] overflow-hidden bg-neutral-200 mb-4 border border-neutral-300">
-                  <Image
-                    src={proj.img}
-                    alt={proj.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute top-3 left-3 bg-[#0B192C] border border-[#C59A3F]/50 px-3 py-1 text-[10px] uppercase tracking-widest font-bold text-[#C59A3F]">
-                    {proj.cat}
+              <ScrollReveal key={i} direction="up" delay={150 * (i + 1)}>
+                <div className="group">
+                  <div className="relative aspect-[4/3] overflow-hidden bg-neutral-200 mb-4 border border-neutral-300">
+                    <Image
+                      src={proj.img}
+                      alt={proj.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute top-3 left-3 bg-[#0B192C] border border-[#C59A3F]/50 px-3 py-1 text-[10px] uppercase tracking-widest font-bold text-[#C59A3F]">
+                      {proj.cat}
+                    </div>
                   </div>
+                  <p className="text-xs uppercase tracking-widest font-bold text-[#C59A3F] mb-1">{proj.location}</p>
+                  <h3 className="font-sans text-sm uppercase tracking-wide font-bold text-[#0B192C] mb-1">{proj.title}</h3>
+                  <p className="text-neutral-500 text-sm font-sans leading-relaxed">{proj.desc}</p>
                 </div>
-                <p className="text-xs uppercase tracking-widest font-bold text-[#C59A3F] mb-1">{proj.location}</p>
-                <h3 className="font-sans text-sm uppercase tracking-wide font-bold text-[#0B192C] mb-1">{proj.title}</h3>
-                <p className="text-neutral-500 text-sm font-sans leading-relaxed">{proj.desc}</p>
-              </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>
@@ -268,9 +277,11 @@ export default function Home() {
               "Energy & Power Companies", "Manufacturing Firms", "Marine Companies",
               "Construction Firms", "International Development Partners", "Private Enterprise Organizations",
             ].map((client, i) => (
-              <div key={i} className="border border-white/10 flex items-center justify-center text-center p-10 hover:bg-white/5 transition-colors">
-                <p className="font-serif text-lg font-bold text-white/80 leading-snug">{client}</p>
-              </div>
+              <ScrollReveal key={i} direction="fade" delay={50 * (i + 1)}>
+                <div className="border border-white/10 flex items-center justify-center text-center p-10 hover:bg-white/5 transition-colors h-full">
+                  <p className="font-serif text-lg font-bold text-white/80 leading-snug">{client}</p>
+                </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>
@@ -282,11 +293,9 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           §6  CONTACT FORM
       ═══════════════════════════════════════════ */}
-
-      {/* ═══════════════════════════════════════════
-          §7  CONTACT FORM
-      ═══════════════════════════════════════════ */}
-      <ContactForm />
+      <ScrollReveal direction="up" delay={100}>
+        <ContactForm />
+      </ScrollReveal>
 
     </div>
   );

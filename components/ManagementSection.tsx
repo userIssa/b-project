@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { X, Briefcase, User } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 interface Executive {
   id: string;
@@ -52,22 +53,24 @@ export default function ManagementSection() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         
         {/* Section Header */}
-        <div className="max-w-4xl mx-auto text-center mb-12">
-          <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#111111] font-normal tracking-tight mb-4">
-            Experienced Management
-          </h2>
-          <p className="text-neutral-600 text-sm sm:text-base font-sans leading-relaxed max-w-3xl mx-auto">
-            B-PROJECTS VENTURES LIMITED is led by a multidisciplinary management team committed to delivering innovative procurement, engineering support, and project delivery solutions with professionalism, integrity, and technical excellence.
-          </p>
-        </div>
+        <ScrollReveal direction="up" delay={0}>
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#111111] font-normal tracking-tight mb-4">
+              Experienced Management
+            </h2>
+            <p className="text-neutral-600 text-sm sm:text-base font-sans leading-relaxed max-w-3xl mx-auto">
+              B-PROJECTS VENTURES LIMITED is led by a multidisciplinary management team committed to delivering innovative procurement, engineering support, and project delivery solutions with professionalism, integrity, and technical excellence.
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* 2 Management Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto justify-center">
-          {executives.map((exec) => (
-            <div
-              key={exec.id}
-              className="bg-[#EEECEA] border border-neutral-300 p-8 rounded-none flex flex-col items-center text-center justify-between space-y-6 hover:border-neutral-400 transition-colors"
-            >
+          {executives.map((exec, idx) => (
+            <ScrollReveal key={exec.id} direction="up" delay={150 * (idx + 1)}>
+              <div
+                className="bg-[#EEECEA] border border-neutral-300 p-8 rounded-none flex flex-col items-center text-center justify-between space-y-6 hover:border-neutral-400 transition-colors h-full"
+              >
               {/* Circle Avatar */}
               <div className="w-20 h-20 rounded-full border border-neutral-300 bg-neutral-200 flex items-center justify-center overflow-hidden shrink-0 relative">
                 {exec.image ? (
@@ -107,6 +110,7 @@ export default function ManagementSection() {
                 READ EXECUTIVE BIO
               </button>
             </div>
+          </ScrollReveal>
           ))}
         </div>
       </div>

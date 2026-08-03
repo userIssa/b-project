@@ -70,16 +70,21 @@ export default function Navbar() {
           className="flex items-center gap-2 group cursor-pointer"
         >
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0">
-            <polyline points="4,24 4,4 24,4" stroke="#a05c1e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-            <line x1="5" y1="23" x2="23" y2="5" stroke="#a05c1e" strokeWidth="2.5" strokeLinecap="round" />
+            <polyline points="4,24 4,4 24,4" stroke="#1D4ED8" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+            <line x1="5" y1="23" x2="23" y2="5" stroke="#1D4ED8" strokeWidth="2.5" strokeLinecap="round" />
           </svg>
           <div className="flex flex-col leading-none">
             <span className={`font-serif text-2xl font-bold tracking-tight transition-colors ${transparent ? "text-white" : "text-[#111111]"}`}>
               B-PROJECTS
             </span>
-            <span className={`text-[9px] uppercase tracking-[0.2em] font-sans font-medium mt-0.5 transition-colors ${transparent ? "text-white/60" : "text-neutral-500"}`}>
-              Ventures Limited
-            </span>
+            <div className="flex items-center gap-1.5 mt-0.5">
+              <span className={`text-[9px] uppercase tracking-[0.2em] font-sans font-medium transition-colors ${transparent ? "text-white/60" : "text-neutral-500"}`}>
+                Ventures Limited
+              </span>
+              <span className={`text-[8px] font-sans font-semibold transition-colors ${transparent ? "text-blue-300" : "text-[#1D4ED8]"}`}>
+                (RC: 9646602)
+              </span>
+            </div>
           </div>
         </a>
 
@@ -95,8 +100,8 @@ export default function Navbar() {
                 onClick={(e) => { e.preventDefault(); handleAnchorClick(item.href); }}
                 className={`text-sm font-sans font-medium tracking-wide transition-colors duration-200 cursor-pointer ${
                   transparent
-                    ? isActive ? "text-white underline underline-offset-4 decoration-[#a05c1e]" : "text-white/80 hover:text-white"
-                    : isActive ? "text-[#111111] underline underline-offset-4 decoration-[#a05c1e]" : "text-neutral-500 hover:text-[#111111]"
+                    ? isActive ? "text-white underline underline-offset-4 decoration-[#1D4ED8]" : "text-white/80 hover:text-white"
+                    : isActive ? "text-[#111111] underline underline-offset-4 decoration-[#1D4ED8]" : "text-neutral-500 hover:text-[#111111]"
                 }`}
               >
                 {item.name}
@@ -126,7 +131,7 @@ export default function Navbar() {
                 href={item.href}
                 onClick={(e) => { e.preventDefault(); handleAnchorClick(item.href); }}
                 className={`block py-3 border-b border-neutral-100 text-sm font-sans font-medium tracking-wide transition-colors cursor-pointer ${
-                  activeSection === id ? "text-[#a05c1e]" : "text-neutral-600 hover:text-[#111111]"
+                  activeSection === id ? "text-[#1D4ED8]" : "text-neutral-600 hover:text-[#111111]"
                 }`}
               >
                 {item.name}

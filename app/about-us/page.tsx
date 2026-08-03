@@ -44,30 +44,42 @@ export default function AboutUsPage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7 space-y-6">
-              <span className="text-xs uppercase tracking-[0.25em] text-[#a05c1e] font-bold">Indigenous Technical Excellence</span>
+              <div className="flex flex-wrap items-center gap-3">
+                <span className="text-xs uppercase tracking-[0.25em] text-[#1D4ED8] font-bold">Indigenous Technical Excellence</span>
+                <span className="text-xs font-semibold px-2.5 py-0.5 bg-[#1D4ED8]/10 text-[#1D4ED8] rounded border border-[#1D4ED8]/20">
+                  RC NO: 9646602
+                </span>
+              </div>
               <h2 className="font-serif text-4xl sm:text-5xl font-bold text-[#111111] leading-tight">
                 Connecting Global OEMs to Local Project Owners &amp; EPC Contractors
               </h2>
               <p className="text-neutral-500 text-base font-sans leading-relaxed">
-                B-Projects Ventures Limited bridges the gap between project owners, EPC contractors, government institutions, and world-class manufacturers. Through end-to-end technical sourcing, expediting, logistics, and project execution support, we ensure seamless supply chain performance.
+                B-Projects Ventures Limited (RC NO: 9646602) bridges the gap between project owners, EPC contractors, government institutions, and world-class manufacturers. Through end-to-end technical sourcing, expediting, logistics, and project execution support, we ensure seamless supply chain performance.
               </p>
               <p className="text-neutral-400 text-sm font-sans leading-relaxed">
                 Our operations serve high-stakes sectors including Upstream/Midstream/Downstream Oil &amp; Gas, Marine &amp; Offshore, Construction, Power Utilities, Healthcare, and Government MDAs.
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-neutral-200">
-                <div className="flex items-start gap-3">
-                  <ShieldCheck className="w-5 h-5 text-[#a05c1e] shrink-0 mt-0.5" />
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-neutral-200">
+                <div className="flex items-start gap-2.5">
+                  <ShieldCheck className="w-5 h-5 text-[#1D4ED8] shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="text-xs uppercase tracking-wider text-neutral-400 font-semibold mb-1">Local Content Commitment</h4>
-                    <p className="text-xs text-[#111111] leading-relaxed">Fully compliant with NOGICD and Nigerian indigenous content regulations.</p>
+                    <h4 className="text-xs uppercase tracking-wider text-neutral-400 font-semibold mb-1">NUPRC Certified</h4>
+                    <p className="text-xs text-[#111111] leading-relaxed">Upstream petroleum regulatory permit holder.</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <Zap className="w-5 h-5 text-[#a05c1e] shrink-0 mt-0.5" />
+                <div className="flex items-start gap-2.5">
+                  <ShieldCheck className="w-5 h-5 text-[#1D4ED8] shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="text-xs uppercase tracking-wider text-neutral-400 font-semibold mb-1">Technical Sourcing</h4>
-                    <p className="text-xs text-[#111111] leading-relaxed">Certified equipment directly sourced from accredited OEMs.</p>
+                    <h4 className="text-xs uppercase tracking-wider text-neutral-400 font-semibold mb-1">NSITF Compliant</h4>
+                    <p className="text-xs text-[#111111] leading-relaxed">Social insurance and HSE workplace compliance.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <Zap className="w-5 h-5 text-[#1D4ED8] shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="text-xs uppercase tracking-wider text-neutral-400 font-semibold mb-1">Local Content</h4>
+                    <p className="text-xs text-[#111111] leading-relaxed">Fully compliant with NOGICD regulations.</p>
                   </div>
                 </div>
               </div>
@@ -88,17 +100,17 @@ export default function AboutUsPage() {
       </section>
 
       {/* Kha-Riz Energy Partnership */}
-      <section className="py-16 bg-[#a05c1e]">
+      <section className="py-16 bg-gradient-to-r from-[#0B192C] via-[#1E3A8A] to-[#1D4ED8]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-2">
-              <Sun className="w-10 h-10 text-white" />
+              <Sun className="w-10 h-10 text-blue-300" />
             </div>
             <div className="lg:col-span-10 space-y-3">
               <h3 className="font-serif text-3xl font-bold text-white">
                 Strategic Partnership with Kha-Riz Energy
               </h3>
-              <p className="text-amber-100/80 text-base font-sans leading-relaxed">
+              <p className="text-blue-100/90 text-base font-sans leading-relaxed">
                 B-Projects Ventures Limited has established a strategic alliance with{" "}
                 <span className="text-white font-semibold">Kha-Riz Energy</span> to deploy commercial and industrial renewable energy systems, EV mobility solutions, battery energy storage systems (BESS), and green power infrastructure supporting Nigeria&apos;s energy transition goals.
               </p>
@@ -164,7 +176,7 @@ export default function AboutUsPage() {
             ].map((item, idx) => (
               <div key={idx} className="border border-white/10 p-8 flex flex-col gap-3 hover:bg-white/5 transition-colors">
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#a05c1e] shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-[#1D4ED8] shrink-0" />
                   <h4 className="font-serif text-xl font-bold text-white">{item.title}</h4>
                 </div>
                 <p className="text-white/50 text-xs font-sans leading-relaxed">{item.desc}</p>
@@ -185,7 +197,7 @@ export default function AboutUsPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-block px-8 py-3.5 bg-[#a05c1e] text-white hover:bg-[#884b16] transition-colors text-xs uppercase tracking-widest font-bold"
+            className="inline-block px-8 py-3.5 bg-[#1D4ED8] text-white hover:bg-[#1E3A8A] transition-colors text-xs uppercase tracking-widest font-bold shadow-md"
           >
             Contact Us
           </Link>

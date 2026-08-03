@@ -53,13 +53,14 @@ export default function ContactForm() {
 
             <div className="pt-4 space-y-4 text-sm font-sans">
               <div>
-                <p className="text-xs uppercase tracking-wider text-neutral-400 font-semibold mb-1">Headquarters</p>
+                <p className="text-xs uppercase tracking-wider text-neutral-400 font-semibold mb-1">Headquarters &amp; Registration</p>
                 <p className="font-medium text-[#111111]">Victoria Island / Lekki Expressway, Lagos, Nigeria</p>
+                <p className="text-xs text-[#1D4ED8] font-semibold mt-0.5">RC NO: 9646602 • NSITF &amp; NUPRC Certified</p>
               </div>
               <div>
                 <p className="text-xs uppercase tracking-wider text-neutral-400 font-semibold mb-1">Procurement Inquiries</p>
-                <p className="font-medium text-[#111111]">info@b-projectsventures.com</p>
-                <p className="text-neutral-500">Tel: +234 (0) 800 B-PROJECTS</p>
+                <p className="font-medium text-[#111111] break-all">managedbybprojects@gmail.com</p>
+                <p className="text-neutral-500">Tel: +234 806 607 9075 / +234 707 036 1222</p>
               </div>
             </div>
           </div>
@@ -68,7 +69,7 @@ export default function ContactForm() {
           <div className="lg:col-span-7">
             {submitted ? (
               <div className="py-16 text-center space-y-4 animate-fade-in">
-                <CheckCircle className="w-12 h-12 text-[#a05c1e] mx-auto" />
+                <CheckCircle className="w-12 h-12 text-[#1D4ED8] mx-auto" />
                 <h3 className="font-serif text-2xl font-bold text-[#111111]">Inquiry Submitted!</h3>
                 <p className="text-neutral-500 text-sm font-sans max-w-md mx-auto leading-relaxed">
                   Thank you, {formData.firstName}. Our technical team will reach out to you shortly.
@@ -78,7 +79,7 @@ export default function ContactForm() {
                     setSubmitted(false);
                     setFormData({ firstName: "", lastName: "", email: "", phone: "", message: "" });
                   }}
-                  className="mt-4 px-6 py-2.5 text-xs uppercase tracking-widest bg-[#a05c1e] text-white hover:bg-[#884b16] transition-colors font-semibold"
+                  className="mt-4 px-6 py-2.5 text-xs uppercase tracking-widest bg-[#1D4ED8] text-white hover:bg-[#1E3A8A] transition-colors font-semibold"
                 >
                   Send Another
                 </button>
@@ -156,7 +157,7 @@ export default function ContactForm() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="px-10 py-3.5 bg-[#a05c1e] text-white hover:bg-[#884b16] transition-colors text-xs uppercase tracking-widest font-bold"
+                  className="px-10 py-3.5 bg-gradient-to-r from-[#1E3A8A] to-[#1D4ED8] text-white hover:from-[#1D4ED8] hover:to-[#2563EB] transition-all duration-300 text-xs uppercase tracking-widest font-bold shadow-md"
                 >
                   {loading ? "Submitting..." : "Submit"}
                 </button>

@@ -80,7 +80,7 @@ export default function Home() {
               Nigerian indigenous procurement, industrial supply, project support, and engineering services — bridging project owners, EPC contractors, and world-class OEMs.
             </p>
             <div className="flex gap-4 flex-wrap pt-2">
-              <a href="#services" className="px-7 py-3.5 bg-[#a05c1e] text-white hover:bg-[#884b16] transition-colors text-xs uppercase tracking-widest font-bold">
+              <a href="#services" className="px-7 py-3.5 bg-[#1D4ED8] hover:bg-[#1E3A8A] text-white transition-colors text-xs uppercase tracking-widest font-bold shadow-lg">
                 Our Services
               </a>
               <a href="#about" className="px-7 py-3.5 border border-white text-white hover:bg-white hover:text-[#111111] transition-colors text-xs uppercase tracking-widest font-bold">
@@ -90,7 +90,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Amber form panel — bottom right */}
+        {/* Form panel — bottom right */}
         <div className="relative z-10 flex justify-end max-w-7xl mx-auto w-full px-6 sm:px-8 pb-0">
           <div className="w-full md:max-w-md lg:max-w-lg">
             <HeroForm />
@@ -106,6 +106,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-20">
             <div className="lg:col-span-4">
               <p className="text-xs uppercase tracking-[0.25em] font-sans font-bold text-neutral-500">About Us</p>
+              <p className="text-xs font-semibold text-[#1D4ED8] mt-1 font-sans">RC NO: 9646602</p>
               <DiagArrow />
             </div>
             <div className="lg:col-span-8 space-y-6">
@@ -113,13 +114,25 @@ export default function Home() {
                 At B-Projects, we simplify procurement processes to increase your project velocity.
               </h2>
               <p className="text-neutral-500 text-base font-sans leading-relaxed">
-                B-Projects Ventures Limited bridges the gap between project owners, EPC contractors, government institutions, and world-class OEMs. Through end-to-end technical sourcing, expediting, logistics, and execution support, we ensure seamless supply chain performance across high-stakes sectors including Upstream/Midstream/Downstream Oil &amp; Gas, Marine &amp; Offshore, Construction, Power Utilities, Healthcare, and Government MDAs.
+                B-Projects Ventures Limited (RC: 9646602) bridges the gap between project owners, EPC contractors, government institutions, and world-class OEMs. Through end-to-end technical sourcing, expediting, logistics, and execution support, we ensure seamless supply chain performance across high-stakes sectors including Upstream/Midstream/Downstream Oil &amp; Gas, Marine &amp; Offshore, Construction, Power Utilities, Healthcare, and Government MDAs.
               </p>
 
-              <div className="pt-2 p-5 bg-[#a05c1e]/10 border-l-4 border-[#a05c1e]">
+              <div className="flex flex-wrap gap-2 pt-1">
+                <span className="px-3 py-1 bg-[#1D4ED8]/10 text-[#1D4ED8] text-xs font-bold uppercase tracking-wider rounded border border-[#1D4ED8]/20">
+                  NUPRC Certified
+                </span>
+                <span className="px-3 py-1 bg-[#1D4ED8]/10 text-[#1D4ED8] text-xs font-bold uppercase tracking-wider rounded border border-[#1D4ED8]/20">
+                  NSITF Compliant
+                </span>
+                <span className="px-3 py-1 bg-white text-neutral-700 text-xs font-bold uppercase tracking-wider rounded border border-neutral-300">
+                  NOGICD Local Content
+                </span>
+              </div>
+
+              <div className="pt-2 p-5 bg-[#1D4ED8]/10 border-l-4 border-[#1D4ED8]">
                 <p className="text-sm text-[#111111] font-sans leading-relaxed">
                   <span className="font-bold">Strategic Partnership:</span> Partnered with{" "}
-                  <span className="text-[#a05c1e] font-semibold">Kha-Riz Energy</span> for commercial solar EPC, battery energy storage, EV mobility, and sustainable power infrastructure supporting Nigeria&apos;s energy transition.
+                  <span className="text-[#1D4ED8] font-semibold">Kha-Riz Energy</span> for commercial solar EPC, battery energy storage, EV mobility, and sustainable power infrastructure supporting Nigeria&apos;s energy transition.
                 </p>
               </div>
 
@@ -140,7 +153,7 @@ export default function Home() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {["Integrity", "Professionalism", "Safety", "Innovation", "Sustainability", "Quality", "Customer Focus", "Operational Excellence"].map((val, i) => (
               <div key={i} className="bg-white border border-neutral-200 p-4 flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#a05c1e] shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#1D4ED8] shrink-0" />
                 <span className="text-xs uppercase tracking-wider font-bold text-[#111111]">{val}</span>
               </div>
             ))}
@@ -151,11 +164,11 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           §3  SERVICES
       ═══════════════════════════════════════════ */}
-      <section id="services" className="bg-[#a05c1e]">
+      <section id="services" className="bg-gradient-to-br from-[#0B192C] via-[#1E3A8A] to-[#1D4ED8]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 pt-20 pb-4">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
             <div className="lg:col-span-4">
-              <p className="text-xs uppercase tracking-[0.25em] font-sans font-bold text-amber-200/70">Our Capabilities &amp; Services</p>
+              <p className="text-xs uppercase tracking-[0.25em] font-sans font-bold text-blue-200/80">Our Capabilities &amp; Services</p>
               <DiagArrow color="white" />
             </div>
             <div className="lg:col-span-6">
@@ -164,7 +177,7 @@ export default function Home() {
               </h2>
             </div>
             <div className="lg:col-span-2 lg:text-right">
-              <a href="#contact" className="inline-block text-xs uppercase tracking-widest font-bold text-white border border-white px-6 py-3 hover:bg-white hover:text-[#a05c1e] transition-colors">
+              <a href="#contact" className="inline-block text-xs uppercase tracking-widest font-bold text-white border border-white px-6 py-3 hover:bg-white hover:text-[#1E3A8A] transition-colors">
                 Get a Quote
               </a>
             </div>
@@ -174,13 +187,13 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-white/20">
           {servicesList.map(({ Icon, label, desc, features }, i) => (
             <div key={i} className="border border-white/20 p-8 hover:bg-white/10 transition-colors group">
-              <Icon className="w-8 h-8 text-white/60 mb-4 group-hover:text-white transition-colors" />
+              <Icon className="w-8 h-8 text-blue-300/80 mb-4 group-hover:text-white transition-colors" />
               <p className="text-xs uppercase tracking-[0.2em] font-sans font-bold text-white mb-3">{label}</p>
-              <p className="text-amber-100/70 text-xs font-sans leading-relaxed mb-4">{desc}</p>
+              <p className="text-blue-100/80 text-xs font-sans leading-relaxed mb-4">{desc}</p>
               <ul className="space-y-1.5 border-t border-white/20 pt-4">
                 {features.map((f, j) => (
-                  <li key={j} className="flex items-center gap-2 text-[11px] text-amber-100/60 font-sans">
-                    <Check className="w-3 h-3 text-white/50 shrink-0" />
+                  <li key={j} className="flex items-center gap-2 text-[11px] text-blue-100/70 font-sans">
+                    <Check className="w-3 h-3 text-white/70 shrink-0" />
                     {f}
                   </li>
                 ))}
@@ -218,11 +231,11 @@ export default function Home() {
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-[#a05c1e] px-3 py-1 text-[10px] uppercase tracking-widest font-bold text-white">
+                  <div className="absolute top-3 left-3 bg-[#1D4ED8] px-3 py-1 text-[10px] uppercase tracking-widest font-bold text-white">
                     {proj.cat}
                   </div>
                 </div>
-                <p className="text-xs uppercase tracking-widest font-bold text-[#a05c1e] mb-1">{proj.location}</p>
+                <p className="text-xs uppercase tracking-widest font-bold text-[#1D4ED8] mb-1">{proj.location}</p>
                 <h3 className="font-sans text-sm uppercase tracking-wide font-bold text-[#111111] mb-1">{proj.title}</h3>
                 <p className="text-neutral-500 text-sm font-sans leading-relaxed">{proj.desc}</p>
               </div>
@@ -265,19 +278,19 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           §6  CONTACT INFO STRIP
       ═══════════════════════════════════════════ */}
-      <section className="bg-[#a05c1e]">
+      <section className="bg-gradient-to-r from-[#0F172A] via-[#1E3A8A] to-[#1D4ED8]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-x border-white/10">
             {[
-              { Icon: MapPin, title: "Corporate HQ",     body: "Victoria Island / Lekki Corridor\nLagos State, Nigeria" },
-              { Icon: Phone,  title: "Direct Line",      body: "+234 (0) 800 B-PROJECTS\nOffice: +234 (0) 1 234 5678" },
-              { Icon: Mail,   title: "Email Inquiries",  body: "info@b-projectsventures.com\nprocurement@b-projectsventures.com" },
-              { Icon: Clock,  title: "Working Hours",    body: "Mon – Fri: 8:00 AM – 5:30 PM WAT\nSat – Sun: Closed" },
+              { Icon: MapPin, title: "Corporate HQ",     body: "Victoria Island / Lekki Corridor\nLagos State, Nigeria\nRC NO: 9646602" },
+              { Icon: Phone,  title: "Direct Line",      body: "+234 806 607 9075\n+234 707 036 1222" },
+              { Icon: Mail,   title: "Email Inquiries",  body: "managedbybprojects@gmail.com" },
+              { Icon: ShieldCheck, title: "Certifications", body: "NUPRC Certified\nNSITF Compliant\nNOGICD Local Content" },
             ].map(({ Icon, title, body }, i) => (
               <div key={i} className="border border-white/10 p-8 space-y-2">
-                <Icon className="w-5 h-5 text-white/60" />
+                <Icon className="w-5 h-5 text-blue-300" />
                 <h3 className="font-sans text-xs uppercase tracking-widest font-bold text-white">{title}</h3>
-                <p className="text-xs text-amber-100/60 font-sans leading-relaxed whitespace-pre-line">{body}</p>
+                <p className="text-xs text-blue-100/90 font-sans leading-relaxed whitespace-pre-line break-words">{body}</p>
               </div>
             ))}
           </div>

@@ -133,7 +133,7 @@ export default function ProjectsPage() {
                 onClick={() => setActiveFilter(cat)}
                 className={`px-5 py-2.5 text-xs uppercase tracking-widest font-semibold transition-all duration-200 ${
                   activeFilter === cat
-                    ? "bg-[#a05c1e] text-white"
+                    ? "bg-[#1D4ED8] text-white shadow-sm"
                     : "bg-transparent text-neutral-500 border border-neutral-300 hover:text-[#111111] hover:border-neutral-400"
                 }`}
               >
@@ -161,23 +161,23 @@ export default function ProjectsPage() {
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-[#a05c1e] px-3 py-1 text-[10px] uppercase tracking-widest font-bold text-white">
+                  <div className="absolute top-3 left-3 bg-[#1D4ED8] px-3 py-1 text-[10px] uppercase tracking-widest font-bold text-white">
                     {project.category}
                   </div>
                 </div>
 
                 <div className="flex items-center justify-between text-xs text-neutral-400 font-sans mb-2">
                   <span className="flex items-center gap-1">
-                    <MapPin className="w-3.5 h-3.5 text-[#a05c1e]" />
+                    <MapPin className="w-3.5 h-3.5 text-[#1D4ED8]" />
                     {project.location}
                   </span>
                   <span className="flex items-center gap-1">
-                    <Calendar className="w-3.5 h-3.5 text-[#a05c1e]" />
+                    <Calendar className="w-3.5 h-3.5 text-[#1D4ED8]" />
                     {project.year}
                   </span>
                 </div>
 
-                <h3 className="font-sans text-sm uppercase tracking-wide font-bold text-[#111111] group-hover:text-[#a05c1e] transition-colors mb-2">
+                <h3 className="font-sans text-sm uppercase tracking-wide font-bold text-[#111111] group-hover:text-[#1D4ED8] transition-colors mb-2">
                   {project.title}
                 </h3>
 
@@ -186,7 +186,7 @@ export default function ProjectsPage() {
                 </p>
 
                 <div className="pt-4 border-t border-neutral-200 mt-4">
-                  <span className="text-xs uppercase tracking-wider font-bold text-[#a05c1e] group-hover:text-[#111111] transition-colors">
+                  <span className="text-xs uppercase tracking-wider font-bold text-[#1D4ED8] group-hover:text-[#111111] transition-colors">
                     View Project Details →
                   </span>
                 </div>
@@ -212,7 +212,7 @@ export default function ProjectsPage() {
 
             {/* Modal Header */}
             <div>
-              <span className="text-xs uppercase tracking-[0.2em] font-bold text-[#a05c1e]">
+              <span className="text-xs uppercase tracking-[0.2em] font-bold text-[#1D4ED8]">
                 {selectedProject.category} Sourcing &amp; Procurement
               </span>
               <h2 className="font-sans text-xl font-bold uppercase tracking-wide text-[#111111] mt-1">
@@ -261,7 +261,7 @@ export default function ProjectsPage() {
               <Link
                 href="/contact"
                 onClick={() => setSelectedProject(null)}
-                className="px-6 py-3 bg-[#a05c1e] text-white hover:bg-[#884b16] transition-colors text-xs uppercase tracking-widest font-bold"
+                className="px-6 py-3 bg-[#1D4ED8] text-white hover:bg-[#1E3A8A] transition-colors text-xs uppercase tracking-widest font-bold shadow-md"
               >
                 Request Sourcing Quote →
               </Link>

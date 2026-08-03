@@ -130,25 +130,25 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* 2. SERVICES GRID — amber background, 2×4 tiles */}
-      <section className="bg-[#a05c1e]">
+      {/* 2. SERVICES GRID — royal blue gradient background, 3-col tiles */}
+      <section className="bg-gradient-to-br from-[#0B192C] via-[#1E3A8A] to-[#1D4ED8]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border-t border-white/20">
           {servicesList.map((service) => (
             <div
               key={service.num}
               className="border border-white/20 p-10 hover:bg-white/10 transition-colors group"
             >
-              <p className="font-serif text-4xl font-bold text-white/30 mb-4">{service.num}.</p>
+              <p className="font-serif text-4xl font-bold text-blue-300/40 mb-4">{service.num}.</p>
               <h3 className="text-xs uppercase tracking-[0.2em] font-sans font-bold text-white mb-4 leading-snug">
                 {service.title}
               </h3>
-              <p className="text-amber-100/70 text-sm font-sans leading-relaxed mb-6">
+              <p className="text-blue-100/80 text-sm font-sans leading-relaxed mb-6">
                 {service.description}
               </p>
               <ul className="space-y-2 border-t border-white/20 pt-4">
                 {service.features.map((feat, idx) => (
-                  <li key={idx} className="flex items-center gap-2 text-xs text-amber-100/80 font-sans">
-                    <Check className="w-3.5 h-3.5 text-white/60 shrink-0" />
+                  <li key={idx} className="flex items-center gap-2 text-xs text-blue-100/70 font-sans">
+                    <Check className="w-3.5 h-3.5 text-white/70 shrink-0" />
                     <span>{feat}</span>
                   </li>
                 ))}
@@ -178,11 +178,11 @@ export default function ServicesPage() {
           <div className="absolute inset-0 bg-black/70" />
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-6 sm:px-8 text-center space-y-8">
-          <span className="font-serif text-7xl text-[#a05c1e] leading-none select-none block">&ldquo;</span>
+          <span className="font-serif text-7xl text-[#38BDF8] leading-none select-none block">&ldquo;</span>
           <blockquote className="font-serif text-2xl sm:text-3xl md:text-4xl text-white font-normal leading-relaxed tracking-tight italic">
             Quality procurement and dependable project support are the foundations of industrial execution and national value creation.
           </blockquote>
-          <p className="text-xs uppercase tracking-[0.3em] font-sans font-bold text-[#a05c1e]">
+          <p className="text-xs uppercase tracking-[0.3em] font-sans font-bold text-[#38BDF8]">
             — B-PROJECTS VENTURES LIMITED
           </p>
         </div>
@@ -199,7 +199,7 @@ export default function ServicesPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-block px-8 py-4 bg-[#a05c1e] text-white hover:bg-[#884b16] transition-colors text-xs uppercase tracking-widest font-bold"
+            className="inline-block px-8 py-4 bg-[#1D4ED8] text-white hover:bg-[#1E3A8A] transition-colors text-xs uppercase tracking-widest font-bold shadow-lg"
           >
             Get in Touch Today
           </Link>

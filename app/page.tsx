@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import HeroForm from "@/components/HeroForm";
 import ContactForm from "@/components/ContactForm";
+import ManagementSection from "@/components/ManagementSection";
 import {
   Factory, Layers, Building2, HardHat,
   Anchor, ShieldCheck, Truck, Sun,
@@ -160,6 +161,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* EXPERIENCED MANAGEMENT */}
+      <ManagementSection />
 
       {/* ═══════════════════════════════════════════
           §3  SERVICES

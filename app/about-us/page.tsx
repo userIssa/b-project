@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ShieldCheck, Zap, Sun, CheckCircle2 } from "lucide-react";
+import ManagementSection from "@/components/ManagementSection";
 
 function DiagArrow({ color = "#111111" }: { color?: string }) {
   return (
@@ -103,38 +104,8 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      {/* EXECUTIVE LEADERSHIP */}
-      <section className="py-20 bg-white border-b border-neutral-200">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-4">
-              <div className="relative aspect-[3/4] w-full overflow-hidden bg-neutral-100 shadow-lg border border-neutral-200">
-                <Image
-                  src="/images/WhatsApp Image 2026-07-27 at 10.52.51 AM.jpeg"
-                  alt="Executive Leadership — B-Projects Ventures Limited"
-                  fill
-                  className="object-cover object-top"
-                />
-              </div>
-            </div>
-            <div className="lg:col-span-8 space-y-5">
-              <p className="text-xs uppercase tracking-[0.25em] font-sans font-bold text-[#C59A3F]">
-                Executive Leadership
-              </p>
-              <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#0B192C]">
-                Guided by Experienced Procurement &amp; Technical Professionals
-              </h3>
-              <p className="text-neutral-600 text-base font-sans leading-relaxed">
-                Our executive leadership team brings deep technical expertise, industry relationships, and governance standards to industrial procurement and project delivery across Nigeria and West Africa.
-              </p>
-              <div className="p-4 bg-[#F8FAFC] border-l-4 border-[#C59A3F] text-xs font-sans text-neutral-700 space-y-1">
-                <p className="font-bold text-sm text-[#0B192C]">B-Projects Executive Operations Team</p>
-                <p className="text-neutral-500">Delivering transparency, strict regulatory compliance (NUPRC &amp; NSITF), and OEM excellence for high-value industrial projects.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* EXPERIENCED MANAGEMENT SECTION */}
+      <ManagementSection />
 
       {/* Kha-Riz Energy Partnership */}
       <section className="py-16 bg-gradient-to-r from-[#07101E] via-[#0B192C] to-[#162A45]">

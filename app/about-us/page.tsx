@@ -104,9 +104,6 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      {/* EXPERIENCED MANAGEMENT SECTION */}
-      <ManagementSection />
-
       {/* Kha-Riz Energy Partnership */}
       <section className="py-16 bg-gradient-to-r from-[#07101E] via-[#0B192C] to-[#162A45]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
@@ -194,10 +191,13 @@ export default function AboutUsPage() {
         </div>
       </section>
 
+      {/* EXPERIENCED MANAGEMENT SECTION (Before Contact CTA) */}
+      <ManagementSection />
+
       {/* CTA */}
       <section className="py-16 bg-[#F5F4F1] border-t border-neutral-200 text-center">
         <div className="max-w-2xl mx-auto px-6 sm:px-8 space-y-5">
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#111111]">
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#0B192C]">
             Ready to partner with us?
           </h2>
           <p className="text-neutral-500 text-sm font-sans">
@@ -205,7 +205,7 @@ export default function AboutUsPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-block px-8 py-3.5 bg-[#1D4ED8] text-white hover:bg-[#1E3A8A] transition-colors text-xs uppercase tracking-widest font-bold shadow-md"
+            className="inline-block px-8 py-3.5 bg-[#C59A3F] hover:bg-[#A67C1E] text-white transition-colors text-xs uppercase tracking-widest font-bold shadow-md"
           >
             Contact Us
           </Link>

@@ -23,10 +23,10 @@ const executives: Executive[] = [
     company: "B-PROJECTS VENTURES LIMITED",
     image: "/images/WhatsApp Image 2026-07-27 at 10.52.51 AM.jpeg",
     bio: [
-      "Adaezechukwu Benita Azaka serves as the Managing Director / Chief Executive Officer of B-PROJECTS VENTURES LIMITED, where she oversees corporate strategy, industrial procurement, project execution, strategic partnerships, and business development.",
-      "She possesses extensive experience in project management, procurement coordination, stakeholder engagement, contract administration, and industrial supply chain implementation. Her ability to translate strategic objectives into efficient operational processes has contributed significantly to the successful delivery of engineering and infrastructure projects.",
-      "Working closely with clients, government institutions, oil & gas operators, development partners, and industry stakeholders, she plays a critical role in ensuring projects are delivered on schedule, within budget, and to the highest standards of quality and professionalism.",
-      "Her commitment to operational excellence, continuous improvement, and customer satisfaction continues to strengthen B-PROJECTS VENTURES LIMITED's reputation as a dependable engineering and industrial supply partner.",
+      "Adaezechukwu Benita Azaka serves as the Managing Director / Chief Executive Officer of B-PROJECTS VENTURES LIMITED, where she oversees corporate strategy, industrial procurement, project execution, strategic partnerships and business development.",
+      "She possesses extensive experience in project management, procurement coordination, stakeholder engagement, contract administration and industrial supply chain implementation. Her ability to translate strategic objectives into efficient operational processes has contributed significantly to the successful delivery of engineering and infrastructure projects.",
+      "Working closely with clients, government institutions, development partners and industry stakeholders, she plays a critical role in ensuring projects are delivered on schedule, within budget and to the highest standards of quality and professionalism.",
+      "Her commitment to operational excellence, continuous improvement and customer satisfaction continues to strengthen B-PROJECTS VENTURES LIMITED’s reputation as a dependable engineering and sustainable supply partner.",
     ],
   },
   {
@@ -37,8 +37,8 @@ const executives: Executive[] = [
     initials: "ED",
     isPlaceholder: true,
     bio: [
-      "The Executive Director / Chief Operating Officer oversees technical operations, OEM expediting, site logistics, and regulatory compliance across B-Projects Ventures Limited's portfolio.",
-      "With deep technical expertise in mechanical procurement, civil infrastructure, and engineering field services, our executive management ensures rigorous quality control and full adherence to NUPRC and NSITF regulatory standards.",
+      "The Chief Operating Officer / Technical Director of B-PROJECTS VENTURES LIMITED oversees technical operations, vendor management, expediting, site logistics and regulatory compliance.",
+      "Bringing extensive engineering background and supply chain coordination, the COO ensures all procurement and field execution align with strict safety standards, NUPRC mandates, and client specifications.",
       "(Full executive biography and profile details will be updated shortly).",
     ],
   },
@@ -48,31 +48,28 @@ export default function ManagementSection() {
   const [selectedExecutive, setSelectedExecutive] = useState<Executive | null>(null);
 
   return (
-    <section className="py-24 bg-[#EEECEA] border-b border-neutral-300">
+    <section className="py-24 bg-[#EEECEA] border-t border-b border-neutral-300">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         
-        {/* Title & Subtitle */}
-        <div className="max-w-4xl space-y-4 mb-16">
-          <p className="text-xs uppercase tracking-[0.25em] font-sans font-bold text-[#C59A3F]">
-            Leadership & Governance
-          </p>
-          <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#0B192C]">
+        {/* Section Header */}
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#111111] font-normal tracking-tight mb-4">
             Experienced Management
           </h2>
-          <p className="text-neutral-600 text-base sm:text-lg font-sans leading-relaxed">
+          <p className="text-neutral-600 text-sm sm:text-base font-sans leading-relaxed max-w-3xl mx-auto">
             B-PROJECTS VENTURES LIMITED is led by a multidisciplinary management team committed to delivering innovative procurement, engineering support, and project delivery solutions with professionalism, integrity, and technical excellence.
           </p>
         </div>
 
-        {/* Executive Cards Grid (2 Columns) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
+        {/* 2 Management Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto justify-center">
           {executives.map((exec) => (
             <div
               key={exec.id}
-              className="bg-[#F5F4F1] border border-neutral-300 p-8 flex flex-col items-center text-center justify-between space-y-6 hover:shadow-md transition-shadow"
+              className="bg-[#EEECEA] border border-neutral-300 p-8 rounded-none flex flex-col items-center text-center justify-between space-y-6 hover:border-neutral-400 transition-colors"
             >
-              {/* Avatar Circle */}
-              <div className="relative w-24 h-24 rounded-full overflow-hidden border-2 border-[#C59A3F]/40 bg-neutral-200 shrink-0 flex items-center justify-center">
+              {/* Circle Avatar */}
+              <div className="w-20 h-20 rounded-full border border-neutral-300 bg-neutral-200 flex items-center justify-center overflow-hidden shrink-0 relative">
                 {exec.image ? (
                   <Image
                     src={exec.image}
@@ -81,22 +78,22 @@ export default function ManagementSection() {
                     className="object-cover object-top"
                   />
                 ) : (
-                  <div className="w-full h-full bg-[#0B192C] text-[#C59A3F] flex items-center justify-center font-bold text-xl font-sans">
-                    {exec.initials || <User className="w-8 h-8 text-neutral-400" />}
+                  <div className="w-full h-full bg-[#E5E3DE] text-neutral-600 flex items-center justify-center font-bold text-lg font-sans">
+                    {exec.initials || <User className="w-7 h-7 text-neutral-500" />}
                   </div>
                 )}
               </div>
 
-              {/* Name & Role */}
-              <div className="space-y-2">
-                <h3 className="font-sans text-xl font-bold text-[#0B192C]">
+              {/* Title & Role */}
+              <div className="space-y-1.5">
+                <h3 className="font-sans text-xl font-normal text-[#111111]">
                   {exec.name}
                 </h3>
-                <p className="text-xs uppercase tracking-widest font-bold text-neutral-500 max-w-xs mx-auto">
+                <p className="text-[10px] font-sans font-bold uppercase tracking-[0.18em] text-neutral-500">
                   {exec.role}
                 </p>
                 {exec.isPlaceholder && (
-                  <span className="inline-block text-[10px] uppercase tracking-wider font-semibold text-[#C59A3F]">
+                  <span className="block text-[9px] uppercase tracking-wider font-semibold text-[#C59A3F] pt-0.5">
                     (Profile Data Pending)
                   </span>
                 )}
@@ -105,9 +102,9 @@ export default function ManagementSection() {
               {/* Read Executive Bio Button */}
               <button
                 onClick={() => setSelectedExecutive(exec)}
-                className="w-full py-3 px-6 bg-[#EBE8E3] hover:bg-[#0B192C] text-[#0B192C] hover:text-white border border-neutral-300 transition-all text-xs uppercase tracking-widest font-bold font-sans"
+                className="w-full py-3 px-4 bg-transparent border border-neutral-300 hover:bg-[#0B192C] hover:text-white hover:border-[#0B192C] transition-all text-[10px] font-sans font-bold uppercase tracking-[0.2em] text-[#111111]"
               >
-                Read Executive Bio
+                READ EXECUTIVE BIO
               </button>
             </div>
           ))}
@@ -116,21 +113,21 @@ export default function ManagementSection() {
 
       {/* EXECUTIVE BIO MODAL */}
       {selectedExecutive && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-fade-in">
-          <div className="relative bg-[#F5F4F1] max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8 sm:p-10 shadow-2xl border border-neutral-300 space-y-6">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
+          <div className="relative bg-[#EEECEA] max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8 sm:p-10 shadow-2xl border border-neutral-300 space-y-6">
             
-            {/* Close Button */}
+            {/* Close Cross Icon */}
             <button
               onClick={() => setSelectedExecutive(null)}
-              className="absolute top-6 right-6 p-2 text-neutral-500 hover:text-[#0B192C] transition-colors"
-              aria-label="Close modal"
+              className="absolute top-6 right-6 p-2 text-neutral-500 hover:text-[#111111] transition-colors"
+              aria-label="Close"
             >
               <X className="w-6 h-6" />
             </button>
 
-            {/* Header: Avatar, Name, Role & Company */}
-            <div className="flex items-center gap-5 pt-2">
-              <div className="relative w-20 h-20 rounded-full overflow-hidden border-2 border-[#C59A3F] bg-neutral-200 shrink-0 flex items-center justify-center">
+            {/* Header: Circle Avatar + Name + Title */}
+            <div className="flex items-start gap-5 pt-2">
+              <div className="w-20 h-20 rounded-full border border-neutral-300 bg-neutral-200 overflow-hidden shrink-0 relative">
                 {selectedExecutive.image ? (
                   <Image
                     src={selectedExecutive.image}
@@ -139,47 +136,47 @@ export default function ManagementSection() {
                     className="object-cover object-top"
                   />
                 ) : (
-                  <div className="w-full h-full bg-[#0B192C] text-[#C59A3F] flex items-center justify-center font-bold text-lg font-sans">
+                  <div className="w-full h-full bg-[#E5E3DE] text-neutral-600 flex items-center justify-center font-bold text-lg font-sans">
                     {selectedExecutive.initials || "ED"}
                   </div>
                 )}
               </div>
 
               <div className="space-y-1">
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#0B192C]">
+                <h3 className="font-serif text-3xl font-bold text-[#111111]">
                   {selectedExecutive.name}
                 </h3>
-                <p className="text-xs uppercase tracking-wider font-bold text-neutral-600">
+                <p className="text-[11px] uppercase tracking-wider font-bold text-neutral-500">
                   {selectedExecutive.role}
                 </p>
-                <p className="text-xs uppercase tracking-widest font-semibold text-[#C59A3F]">
+                <p className="text-xs uppercase tracking-widest font-semibold text-[#0B192C]">
                   {selectedExecutive.company}
                 </p>
               </div>
             </div>
 
-            <hr className="border-neutral-300" />
+            <hr className="border-t border-neutral-300" />
 
-            {/* Bio Body */}
+            {/* Bio Content Paragraphs */}
             <div className="space-y-4 text-sm font-sans text-neutral-700 leading-relaxed">
               {selectedExecutive.bio.map((paragraph, idx) => (
                 <p key={idx}>{paragraph}</p>
               ))}
             </div>
 
-            <hr className="border-neutral-300 pt-2" />
+            <hr className="border-t border-neutral-300 pt-2" />
 
-            {/* Footer */}
+            {/* Modal Footer */}
             <div className="flex items-center justify-between pt-2">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-neutral-600">
-                <Briefcase className="w-4 h-4 text-[#C59A3F]" />
+                <Briefcase className="w-4 h-4 text-[#0B192C]" />
                 <span>EXECUTIVE BOARD</span>
               </div>
               <button
                 onClick={() => setSelectedExecutive(null)}
-                className="px-6 py-2.5 bg-neutral-300 hover:bg-[#0B192C] text-[#0B192C] hover:text-white transition-colors text-xs uppercase tracking-widest font-bold"
+                className="px-6 py-2.5 bg-neutral-200 hover:bg-[#0B192C] hover:text-white border border-neutral-300 text-xs font-bold uppercase tracking-widest text-[#111111] transition-colors"
               >
-                Close
+                CLOSE
               </button>
             </div>
 

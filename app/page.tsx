@@ -59,7 +59,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero_canyon_bridge.png"
-            alt="B-Projects Ventures — Industrial Project Support"
+            alt="B-Projects Ventures - Industrial Project Support"
             fill
             priority
             sizes="100vw"
@@ -78,7 +78,7 @@ export default function Home() {
               B-Projects Ventures Limited
             </h1>
             <p className="text-white/60 text-base font-sans max-w-xl leading-relaxed">
-              Nigerian indigenous procurement, industrial supply, project support, and engineering services — bridging project owners, EPC contractors, and world-class OEMs.
+              Nigerian indigenous procurement, industrial supply, project support, and engineering services, bridging project owners, EPC contractors, and world-class OEMs.
             </p>
             <div className="flex gap-4 flex-wrap pt-2">
               <a href="#services" className="px-7 py-3.5 bg-[#C59A3F] hover:bg-[#A67C1E] text-white transition-colors text-xs uppercase tracking-widest font-bold shadow-lg">
@@ -161,9 +161,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* EXPERIENCED MANAGEMENT */}
-      <ManagementSection />
 
       {/* ═══════════════════════════════════════════
           §3  SERVICES
@@ -279,27 +276,12 @@ export default function Home() {
         </div>
       </section>
 
+      {/* EXPERIENCED MANAGEMENT (Placed before Contact section) */}
+      <ManagementSection />
+
       {/* ═══════════════════════════════════════════
-          §6  CONTACT INFO STRIP
+          §6  CONTACT FORM
       ═══════════════════════════════════════════ */}
-      <section className="bg-gradient-to-r from-[#07101E] via-[#0B192C] to-[#162A45]">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-x border-white/10">
-            {[
-              { Icon: MapPin, title: "Corporate HQ",     body: "Victoria Island / Lekki Corridor\nLagos State, Nigeria\nRC NO: 9646602" },
-              { Icon: Phone,  title: "Direct Line",      body: "+234 806 607 9075\n+234 707 036 1222" },
-              { Icon: Mail,   title: "Email Inquiries",  body: "managedbybprojects@gmail.com" },
-              { Icon: ShieldCheck, title: "Certifications", body: "NUPRC Certified\nNSITF Compliant\nNOGICD Local Content" },
-            ].map(({ Icon, title, body }, i) => (
-              <div key={i} className="border border-white/10 p-8 space-y-2">
-                <Icon className="w-5 h-5 text-[#C59A3F]" />
-                <h3 className="font-sans text-xs uppercase tracking-widest font-bold text-white">{title}</h3>
-                <p className="text-xs text-amber-100/90 font-sans leading-relaxed whitespace-pre-line break-words">{body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ═══════════════════════════════════════════
           §7  CONTACT FORM

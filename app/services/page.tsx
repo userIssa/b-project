@@ -183,7 +183,7 @@ export default function ServicesPage() {
             Quality procurement and dependable project support are the foundations of industrial execution and national value creation.
           </blockquote>
           <p className="text-xs uppercase tracking-[0.3em] font-sans font-bold text-[#C59A3F]">
-            — B-PROJECTS VENTURES LIMITED
+            B-PROJECTS VENTURES LIMITED
           </p>
         </div>
       </section>

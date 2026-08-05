@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { X, Calendar, MapPin } from "lucide-react";
@@ -108,6 +108,18 @@ export default function ProjectsPage() {
   const [activeFilter, setActiveFilter] = useState<string>("All");
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setSelectedProject(null);
+      }
+    };
+    if (selectedProject) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedProject]);
+
   const categories = ["All", "Oil & Gas", "Renewables", "Government", "Marine", "Infrastructure"];
 
   const filteredProjects = activeFilter === "All"
@@ -210,8 +222,14 @@ export default function ProjectsPage() {
 
       {/* 3. PROJECT DETAIL MODAL */}
       {selectedProject && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
-          <div className="relative bg-white max-w-3xl w-full max-h-[90vh] overflow-y-auto p-8 shadow-2xl space-y-6">
+        <div
+          onClick={() => setSelectedProject(null)}
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm cursor-pointer"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="relative bg-white max-w-3xl w-full max-h-[90vh] overflow-y-auto p-8 shadow-2xl space-y-6 cursor-default"
+          >
 
             {/* Close Button */}
             <button

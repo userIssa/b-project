@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { X, Briefcase, User } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -46,6 +46,18 @@ const executives: Executive[] = [
 
 export default function ManagementSection() {
   const [selectedExecutive, setSelectedExecutive] = useState<Executive | null>(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setSelectedExecutive(null);
+      }
+    };
+    if (selectedExecutive) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedExecutive]);
 
   return (
     <section className="py-24 bg-[#EEECEA] border-t border-b border-neutral-300">
@@ -116,8 +128,14 @@ export default function ManagementSection() {
 
       {/* EXECUTIVE BIO MODAL */}
       {selectedExecutive && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
-          <div className="relative bg-[#EEECEA] max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8 sm:p-10 shadow-2xl border border-neutral-300 space-y-6">
+        <div
+          onClick={() => setSelectedExecutive(null)}
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in cursor-pointer"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="relative bg-[#EEECEA] max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8 sm:p-10 shadow-2xl border border-neutral-300 space-y-6 cursor-default"
+          >
             
             {/* Close Cross Icon */}
             <button

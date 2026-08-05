@@ -31,16 +31,15 @@ const executives: Executive[] = [
     ],
   },
   {
-    id: "coo-placeholder",
-    name: "Executive Director",
-    role: "CHIEF OPERATING OFFICER / TECHNICAL DIRECTOR",
+    id: "shayan-dehghan",
+    name: "Shayan Dehghan",
+    role: "STRATEGIC COLLABORATION",
     company: "B-PROJECTS VENTURES LIMITED",
-    initials: "ED",
-    isPlaceholder: true,
+    image: "/images/Shayan Dehghan.png",
     bio: [
-      "The Chief Operating Officer / Technical Director of B-PROJECTS VENTURES LIMITED oversees technical operations, vendor management, expediting, site logistics and regulatory compliance.",
-      "Bringing extensive engineering background and supply chain coordination, the COO ensures all procurement and field execution align with strict safety standards, NUPRC mandates, and client specifications.",
-      "(Full executive biography and profile details will be updated shortly).",
+      "Throughout his career, Shayan Dehghan has built a strong foundation in operations, mechanical systems, and project coordination by taking on progressively greater responsibilities in industrial and technical environments. His experience includes overseeing complex work scopes, coordinating multiple trades and departments, ensuring work is completed safely and on schedule, and acting as a key point of communication between operations, maintenance, safety, and field personnel.",
+      "With a Diploma in Mechanical Design and hands-on experience in mechanical testing, quality standards, and operational leadership, he has developed a practical, solutions-focused approach to problem-solving. He has also led safety training, coordinated high-priority work, and consistently looked for opportunities to improve efficiency and support his team.",
+      "As he continues to grow professionally, his goal is to transition into engineering project management, where he can combine his technical knowledge, leadership experience, and passion for organizing complex projects to deliver successful outcomes.",
     ],
   },
 ];

@@ -20,6 +20,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "B-Projects Ventures Limited | Delivering Solutions. Creating Value.",
   description: "Nigerian indigenous procurement, industrial supply, project support, engineering services, and renewable energy solutions in strategic partnership with Kha-Riz Energy.",
+  icons: {
+    icon: "/images/B-PROJECTS VENTURES LIMITED.png",
+    shortcut: "/images/B-PROJECTS VENTURES LIMITED.png",
+    apple: "/images/B-PROJECTS VENTURES LIMITED.png",
+  },
 };
 
 export default function RootLayout({

@@ -161,7 +161,7 @@ export default function ManagementSection() {
             <hr className="border-t border-neutral-300" />
 
             {/* Bio Content Paragraphs */}
-            <div className="space-y-4 text-sm font-sans text-neutral-700 leading-relaxed">
+            <div className="space-y-4 text-sm font-sans text-neutral-700 leading-relaxed text-justify">
               {selectedExecutive.bio.map((paragraph, idx) => (
                 <p key={idx}>{paragraph}</p>
               ))}
